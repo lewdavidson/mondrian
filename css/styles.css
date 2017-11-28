@@ -1,0 +1,86 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+.box1 {
+  float: left;
+  height: 100vh;
+  width: 60vw;
+  margin-right: 1vw;
+}
+
+.box2 {
+  float: right;
+  height: 49vh;
+  width: 35vw;
+  margin-bottom: 1vh;
+}
+
+.box3 {
+  float: right;
+  height: 49vh;
+  width: 35vw;
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 700px) {
+  .box1 {
+    background: red;
+    float: left;
+    height: 50vh;
+    width: 97vw;
+    margin-right: 0vw;
+    margin-bottom: 1vh;
+  }
+  .box2, .box3 {
+    float: left;
+    height: 47vh;
+    width: 47vw;
+    margin-top: 0;
+  }
+  .box2 {
+  background: cyan;
+  margin-bottom: 1vh;
+  }
+  .box3 {
+    background: violet;
+    float: right;
+    margin-right: .7vw;
+  }
+
+
+@media screen and (max-width: 300px) {
+  .box1 {
+    background: red;
+    width: 100vw;
+    height: 48vh;
+    margin-bottom: 2vh;
+  }
+
+  .box2 {
+    background: cyan;
+    width: 100vw;
+    height: 23vh;
+    float: left;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+  }
+
+  .box3 {
+    background: violet;
+    width: 100vw;
+    height: 23vh;
+    float: left;
+    margin-left: 1vw;
+  }
+
+}
